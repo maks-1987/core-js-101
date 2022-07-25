@@ -5,7 +5,6 @@
  *                                                                                           *
  ******************************************************************************************* */
 
-
 /**
  * Returns the result of concatenation of two strings.
  *
@@ -21,7 +20,6 @@
 function concatenateStrings(value1, value2) {
   return value1 + value2;
 }
-
 
 /**
  * Returns the length of given string.
@@ -68,7 +66,6 @@ function getStringFromTemplate(firstName, lastName) {
 function extractNameFromTemplate(value) {
   return value.split(',')[1].slice(0, -1).trim();
 }
-
 
 /**
  * Returns a first char of the given string.
@@ -226,6 +223,29 @@ function getRectangleString(width, height) {
  */
 function encodeToRot13(/* str */) {
   throw new Error('Not implemented');
+  // const string1 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+  // const string2 = 'NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm';
+  // const arr = string1.split('');
+  // const arr2 = string2.split('');
+  // const strArr = str.split('');
+  // const newArr = [];
+
+  // for (let j = 0; j <= strArr.length; j++) {
+  //   for (let i = 0; i < arr.length; i++) {
+  //     if (arr[i] === strArr[j]) {
+  //       newArr.push(arr2[i]);
+  //     } else if (
+  //       str.charCodeAt(j) < 65 ||
+  //       (str.charCodeAt(j) > 97 &&
+  //         (str.charCodeAt(j) < 97 || str.charCodeAt(j) > 122))
+  //     ) {
+  //       newArr.push(strArr[j]);
+  //       break;
+  //     }
+  //   }
+  // }
+
+  // return newArr.join('');
 }
 
 /**
@@ -275,14 +295,61 @@ function isString(value) {
  */
 function getCardId(value) {
   const cards = [
-    'A♣', '2♣', '3♣', '4♣', '5♣', '6♣', '7♣', '8♣', '9♣', '10♣', 'J♣', 'Q♣', 'K♣',
-    'A♦', '2♦', '3♦', '4♦', '5♦', '6♦', '7♦', '8♦', '9♦', '10♦', 'J♦', 'Q♦', 'K♦',
-    'A♥', '2♥', '3♥', '4♥', '5♥', '6♥', '7♥', '8♥', '9♥', '10♥', 'J♥', 'Q♥', 'K♥',
-    'A♠', '2♠', '3♠', '4♠', '5♠', '6♠', '7♠', '8♠', '9♠', '10♠', 'J♠', 'Q♠', 'K♠',
+    'A♣',
+    '2♣',
+    '3♣',
+    '4♣',
+    '5♣',
+    '6♣',
+    '7♣',
+    '8♣',
+    '9♣',
+    '10♣',
+    'J♣',
+    'Q♣',
+    'K♣',
+    'A♦',
+    '2♦',
+    '3♦',
+    '4♦',
+    '5♦',
+    '6♦',
+    '7♦',
+    '8♦',
+    '9♦',
+    '10♦',
+    'J♦',
+    'Q♦',
+    'K♦',
+    'A♥',
+    '2♥',
+    '3♥',
+    '4♥',
+    '5♥',
+    '6♥',
+    '7♥',
+    '8♥',
+    '9♥',
+    '10♥',
+    'J♥',
+    'Q♥',
+    'K♥',
+    'A♠',
+    '2♠',
+    '3♠',
+    '4♠',
+    '5♠',
+    '6♠',
+    '7♠',
+    '8♠',
+    '9♠',
+    '10♠',
+    'J♠',
+    'Q♠',
+    'K♠',
   ];
   return cards.indexOf(value);
 }
-
 
 module.exports = {
   concatenateStrings,
